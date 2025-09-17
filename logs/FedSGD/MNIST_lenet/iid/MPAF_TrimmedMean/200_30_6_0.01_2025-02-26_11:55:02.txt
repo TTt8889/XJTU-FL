@@ -1,9 +1,0 @@
-seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 32, learning_rate: 0.01, model: lenet, dataset: MNIST, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, num_workers: 0, record_time: False, gpu_idx: [0], my_exp: True, show_3d: False, epochs: 200, predict_epochs: 5, predict_alpha: 0.8, show_sign_flip: True, num_clients: 30, num_adv: 6, attack: MPAF, defense: TrimmedMean, attack_params: {'lamda': '1e6'}, defense_params: {'beta': 0.1}, benchmark: False, num_training_sample: 60000, num_channels: 1, num_classes: 10, mean: (0.1307,), std: (0.3081,), device: cuda:0, output: ./logs/FedSGD/MNIST_lenet/iid/MPAF_TrimmedMean/200_30_6_0.01_2025-02-26_11:55:02.txt
-
-Started on Wed Feb 26 11:55:02 2025
-Generating new indices
-Doing iid partition
-iid partition finished
-Data partitioned
-Clients and server are initialized
-Starting Training...
