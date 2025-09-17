@@ -1,0 +1,9 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 32, learning_rate: 0.01, model: lenet, dataset: MNIST, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, num_workers: 0, record_time: False, gpu_idx: [1], my_exp: True, show_3d: False, epochs: 500, predict_epochs: 5, predict_alpha: 0.8, num_clients: 10, num_adv: 2, attack: MyAttack, defense: MultiKrum, attack_params: None, defense_params: {'avg_percentage': 0.2, 'enable_check': False}, benchmark: False, num_training_sample: 60000, num_channels: 1, num_classes: 10, mean: (0.1307,), std: (0.3081,), device: cuda:1, output: ./logs/FedSGD/MNIST_lenet/iid/MyAttack_MultiKrum/500_10_2_0.01_2025-02-22_23:16:38.txt
+
+Started on Sat Feb 22 23:16:38 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...

@@ -1,0 +1,45 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 32, learning_rate: 0.01, model: lenet, dataset: MNIST, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, num_workers: 0, record_time: False, gpu_idx: [0], my_exp: True, epochs: 200, predict_epochs: 5, predict_alpha: 0.8, hyper_e: 50, softmax_seg: Min, show_sign_flip: False, other_show_3d: False, only_show_last_epoch: True, npy_file_name: 3.1.1, npy_prefix: None, num_clients: 30, num_adv: 6, attack: MyAttack, defense: TrimmedMean, attack_params: {'aff_open': False, 'moment_open': True, 'record_sign_match': False}, defense_params: {'beta': 0.1}, benchmark: False, num_training_sample: 60000, num_channels: 1, num_classes: 10, mean: (0.1307,), std: (0.3081,), device: cuda:0, output: ./logs/FedSGD/MNIST_lenet/iid/MyAttack_TrimmedMean/200_30_6_0.01_2025-09-16_20-45-34.txt
+
+Started on Tue Sep 16 20:45:34 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...
+Epoch 0  	Train Acc: 0.0990	Train loss: 0.0722	Test Acc: 0.1253	Test loss: 0.1860
+Epoch 1  	Train Acc: 0.1510	Train loss: 0.1827	Test Acc: 0.1510	Test loss: 1.2048
+Epoch 2  	Train Acc: 0.1417	Train loss: 1.2120	Test Acc: 0.0945	Test loss: 3.2986
+Epoch 3  	Train Acc: 0.0885	Train loss: 3.3225	Test Acc: 0.0946	Test loss: 12.8434
+Epoch 4  	Train Acc: 0.1031	Train loss: 12.6851	Test Acc: 0.1008	Test loss: 82.5042
+Epoch 5  	Train Acc: 0.0844	Train loss: 84.4526	Test Acc: 0.0550	Test loss: 329.9642
+Epoch 6  	Train Acc: 0.0521	Train loss: 319.3103	Test Acc: 0.1107	Test loss: 186.2279
+Epoch 7  	Train Acc: 0.1375	Train loss: 178.8546	Test Acc: 0.0980	Test loss: 2.5589
+Epoch 8  	Train Acc: 0.1083	Train loss: 2.5405	Test Acc: 0.0980	Test loss: 3.1269
+Epoch 9  	Train Acc: 0.0948	Train loss: 3.0986	Test Acc: 0.0980	Test loss: 2.4786
+Epoch 10 	Train Acc: 0.0844	Train loss: 2.6084	Test Acc: 0.0980	Test loss: 0.4396
+Epoch 11 	Train Acc: 0.0927	Train loss: 0.4390	Test Acc: 0.0980	Test loss: 0.2491
+Epoch 12 	Train Acc: 0.1000	Train loss: 0.2436	Test Acc: 0.1032	Test loss: 0.2341
+Epoch 13 	Train Acc: 0.0896	Train loss: 0.2286	Test Acc: 0.1032	Test loss: 0.2108
+Epoch 14 	Train Acc: 0.0792	Train loss: 0.2112	Test Acc: 0.1028	Test loss: 0.1836
+Epoch 15 	Train Acc: 0.0865	Train loss: 0.1834	Test Acc: 0.1028	Test loss: 0.1758
+Epoch 16 	Train Acc: 0.0938	Train loss: 0.1848	Test Acc: 0.1028	Test loss: 0.1715
+Epoch 17 	Train Acc: 0.1177	Train loss: 0.1698	Test Acc: 0.1028	Test loss: 0.1493
+Epoch 18 	Train Acc: 0.1073	Train loss: 0.1490	Test Acc: 0.1028	Test loss: 0.1194
+Epoch 19 	Train Acc: 0.1062	Train loss: 0.1208	Test Acc: 0.1028	Test loss: 0.0976
+Epoch 20 	Train Acc: 0.0990	Train loss: 0.0969	Test Acc: 0.0974	Test loss: 0.0936
+Epoch 21 	Train Acc: 0.1031	Train loss: 0.0925	Test Acc: 0.1032	Test loss: 0.0932
+Epoch 22 	Train Acc: 0.1146	Train loss: 0.0913	Test Acc: 0.1032	Test loss: 0.0876
+Epoch 23 	Train Acc: 0.0938	Train loss: 0.0879	Test Acc: 0.1010	Test loss: 0.0808
+Epoch 24 	Train Acc: 0.1177	Train loss: 0.0799	Test Acc: 0.1135	Test loss: 0.0770
+Epoch 25 	Train Acc: 0.1010	Train loss: 0.0772	Test Acc: 0.1010	Test loss: 0.0772
+Epoch 26 	Train Acc: 0.0927	Train loss: 0.0766	Test Acc: 0.1010	Test loss: 0.0775
+Epoch 27 	Train Acc: 0.1021	Train loss: 0.0773	Test Acc: 0.1010	Test loss: 0.0779
+Epoch 28 	Train Acc: 0.1062	Train loss: 0.0786	Test Acc: 0.1010	Test loss: 0.0781
+Epoch 29 	Train Acc: 0.1208	Train loss: 0.0774	Test Acc: 0.1010	Test loss: 0.0780
+Epoch 30 	Train Acc: 0.1146	Train loss: 0.0786	Test Acc: 0.1010	Test loss: 0.0776
+Epoch 31 	Train Acc: 0.1115	Train loss: 0.0770	Test Acc: 0.1010	Test loss: 0.0771
+Epoch 32 	Train Acc: 0.1010	Train loss: 0.0762	Test Acc: 0.1010	Test loss: 0.0766
+Epoch 33 	Train Acc: 0.0906	Train loss: 0.0771	Test Acc: 0.1135	Test loss: 0.0764
+Epoch 34 	Train Acc: 0.1115	Train loss: 0.0759	Test Acc: 0.1135	Test loss: 0.0765
+Epoch 35 	Train Acc: 0.1125	Train loss: 0.0762	Test Acc: 0.1135	Test loss: 0.0767

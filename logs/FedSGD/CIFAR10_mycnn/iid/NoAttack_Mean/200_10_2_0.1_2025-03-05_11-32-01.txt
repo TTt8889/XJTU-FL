@@ -1,0 +1,10 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, lr_scheduler: MultiStepLR, milestones: [0.6, 0.8], batch_size: 128, learning_rate: 0.1, model: mycnn, dataset: CIFAR10, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, num_workers: 0, record_time: False, gpu_idx: [0], my_exp: True, epochs: 200, predict_epochs: 5, predict_alpha: 0.8, show_sign_flip: False, other_show_3d: False, only_show_last_epoch: False, npy_file_name: cifar10-test, npy_prefix: None, num_clients: 10, num_adv: 2, attack: NoAttack, defense: Mean, attack_params: None, defense_params: None, benchmark: False, num_training_sample: 50000, num_channels: 3, num_classes: 10, mean: (0.4914, 0.4822, 0.4465), std: (0.247, 0.243, 0.261), device: cuda:0, output: ./logs/FedSGD/CIFAR10_mycnn/iid/NoAttack_Mean/200_10_2_0.1_2025-03-05_11-32-01.txt
+
+Started on Wed Mar  5 11:32:01 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...
+Epoch 0  	Train Acc: 0.1359	Train loss: 0.0180	Test Acc: 0.1054	Test loss: 0.0181

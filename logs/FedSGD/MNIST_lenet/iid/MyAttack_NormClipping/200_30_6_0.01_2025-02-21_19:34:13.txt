@@ -1,0 +1,32 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 64, learning_rate: 0.01, model: lenet, dataset: MNIST, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, gpu_idx: [2], num_workers: 0, record_time: False, my_exp: True, show_3d: False, epochs: 200, predict_epochs: 1, predict_alpha: 0.8, num_clients: 30, num_adv: 6, attack: MyAttack, defense: NormClipping, attack_params: None, defense_params: {'weakDP': True, 'norm_threshold': 3, 'noise_mean': 0, 'noise_std': 0.002}, benchmark: False, num_training_sample: 60000, num_channels: 1, num_classes: 10, mean: (0.1307,), std: (0.3081,), device: cuda:2, output: ./logs/FedSGD/MNIST_lenet/iid/MyAttack_NormClipping/200_30_6_0.01_2025-02-21_19:34:13.txt
+
+Started on Fri Feb 21 19:34:13 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...
+Epoch 0  	Train Acc: 0.0995	Train loss: 0.0360	Test Acc: 0.0930	Test loss: 0.0362
+Epoch 1  	Train Acc: 0.1042	Train loss: 0.0360	Test Acc: 0.0955	Test loss: 0.0362
+Epoch 2  	Train Acc: 0.0943	Train loss: 0.0360	Test Acc: 0.0987	Test loss: 0.0362
+Epoch 3  	Train Acc: 0.1057	Train loss: 0.0360	Test Acc: 0.1010	Test loss: 0.0362
+Epoch 4  	Train Acc: 0.1073	Train loss: 0.0360	Test Acc: 0.1046	Test loss: 0.0361
+Epoch 5  	Train Acc: 0.1026	Train loss: 0.0360	Test Acc: 0.1115	Test loss: 0.0361
+Epoch 6  	Train Acc: 0.1021	Train loss: 0.0360	Test Acc: 0.1158	Test loss: 0.0361
+Epoch 7  	Train Acc: 0.1172	Train loss: 0.0359	Test Acc: 0.1169	Test loss: 0.0361
+Epoch 8  	Train Acc: 0.1240	Train loss: 0.0359	Test Acc: 0.1172	Test loss: 0.0361
+Epoch 9  	Train Acc: 0.1271	Train loss: 0.0359	Test Acc: 0.1163	Test loss: 0.0361
+Epoch 10 	Train Acc: 0.1120	Train loss: 0.0359	Test Acc: 0.1161	Test loss: 0.0361
+Epoch 11 	Train Acc: 0.1234	Train loss: 0.0359	Test Acc: 0.1156	Test loss: 0.0360
+Epoch 12 	Train Acc: 0.1187	Train loss: 0.0359	Test Acc: 0.1165	Test loss: 0.0360
+Epoch 13 	Train Acc: 0.1198	Train loss: 0.0358	Test Acc: 0.1183	Test loss: 0.0360
+Epoch 14 	Train Acc: 0.1203	Train loss: 0.0359	Test Acc: 0.1263	Test loss: 0.0360
+Epoch 15 	Train Acc: 0.1349	Train loss: 0.0358	Test Acc: 0.1329	Test loss: 0.0360
+Epoch 16 	Train Acc: 0.1297	Train loss: 0.0358	Test Acc: 0.1517	Test loss: 0.0360
+Epoch 17 	Train Acc: 0.1562	Train loss: 0.0358	Test Acc: 0.1743	Test loss: 0.0359
+Epoch 18 	Train Acc: 0.1771	Train loss: 0.0357	Test Acc: 0.1922	Test loss: 0.0359
+Epoch 19 	Train Acc: 0.1859	Train loss: 0.0358	Test Acc: 0.2087	Test loss: 0.0359
+Epoch 20 	Train Acc: 0.2036	Train loss: 0.0358	Test Acc: 0.2202	Test loss: 0.0359
+Epoch 21 	Train Acc: 0.2120	Train loss: 0.0357	Test Acc: 0.2277	Test loss: 0.0359
+Epoch 22 	Train Acc: 0.2490	Train loss: 0.0357	Test Acc: 0.2365	Test loss: 0.0358

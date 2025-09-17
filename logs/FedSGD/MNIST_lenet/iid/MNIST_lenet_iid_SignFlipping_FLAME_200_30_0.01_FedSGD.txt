@@ -1,0 +1,12 @@
+seed: 4, epochs: 200, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 64, learning_rate: 0.01, model: lenet, dataset: MNIST, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.5, cache_partition: False, gpu_idx: [2], num_workers: 0, record_time: False, my_exp: True, show_3d: False, predict_epochs: 2, predict_alpha: 0.8, num_clients: 30, num_adv: 6, attack: SignFlipping, defense: FLAME, attack_params: None, defense_params: {'gamma': 1.2e-05}, benchmark: False, num_training_sample: 60000, num_channels: 1, num_classes: 10, mean: (0.1307,), std: (0.3081,), device: cuda:2, output: ./logs/FedSGD/MNIST_lenet/iid/MNIST_lenet_iid_SignFlipping_FLAME_200_30_0.01_FedSGD.txt
+
+Started on Tue Feb 18 18:22:21 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...
+Epoch 0  		Train Acc: 0.0958	Train loss: 0.0360	Test Acc: 0.0926	Test loss: 0.0362
+Epoch 1  		Train Acc: 0.0927	Train loss: 0.0359	Test Acc: 0.0929	Test loss: 0.0362
+Epoch 2  		Train Acc: 0.0922	Train loss: 0.0360	Test Acc: 0.0933	Test loss: 0.0361

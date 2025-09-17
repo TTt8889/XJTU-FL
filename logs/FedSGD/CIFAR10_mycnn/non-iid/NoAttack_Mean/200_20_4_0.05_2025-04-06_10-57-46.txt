@@ -1,0 +1,10 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, lr_scheduler: MultiStepLR, milestones: [0.6, 0.8], batch_size: 128, learning_rate: 0.05, model: mycnn, dataset: CIFAR10, distribution: non-iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.8, cache_partition: False, num_workers: 0, record_time: False, gpu_idx: [1], my_exp: True, epochs: 200, predict_epochs: 5, predict_alpha: 0.8, hyper_e: 50, show_sign_flip: False, other_show_3d: False, only_show_last_epoch: True, npy_file_name: 3.3.2noiid, npy_prefix: None, num_clients: 20, num_adv: 4, attack: NoAttack, defense: Mean, attack_params: None, defense_params: None, benchmark: False, num_training_sample: 50000, num_channels: 3, num_classes: 10, mean: (0.4914, 0.4822, 0.4465), std: (0.247, 0.243, 0.261), device: cuda:1, output: ./logs/FedSGD/CIFAR10_mycnn/non-iid/NoAttack_Mean/200_20_4_0.05_2025-04-06_10-57-46.txt
+
+Started on Sun Apr  6 10:57:46 2025
+Generating new indices
+Doing non-iid partition
+dirichlet alpha: 0.8
+non-iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...

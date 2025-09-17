@@ -1,0 +1,16 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 32, learning_rate: 0.01, model: lenet, dataset: MNIST, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, num_workers: 0, record_time: False, gpu_idx: [3], my_exp: True, epochs: 200, predict_epochs: 5, predict_alpha: 0.8, show_sign_flip: False, other_show_3d: False, only_show_last_epoch: True, npy_file_name: 3.3.2SignMatch, npy_prefix: None, num_clients: 30, num_adv: 9, attack: MyAttack, defense: NormClipping, attack_params: {'aff_open': False, 'moment_open': True, 'record_sign_match': True}, defense_params: {'weakDP': True, 'norm_threshold': 3, 'noise_mean': 0, 'noise_std': 0.002}, benchmark: False, num_training_sample: 60000, num_channels: 1, num_classes: 10, mean: (0.1307,), std: (0.3081,), device: cuda:3, output: ./logs/FedSGD/MNIST_lenet/iid/MyAttack_NormClipping/200_30_9_0.01_2025-03-11_15-13-26.txt
+
+Started on Tue Mar 11 15:13:26 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...
+Epoch 0  	Train Acc: 0.0990	Train loss: 0.0722	Test Acc: 0.0984	Test loss: 0.0722
+Epoch 1  	Train Acc: 0.1115	Train loss: 0.0720	Test Acc: 0.0984	Test loss: 0.0722
+Epoch 2  	Train Acc: 0.0917	Train loss: 0.0723	Test Acc: 0.0978	Test loss: 0.0722
+Epoch 3  	Train Acc: 0.0833	Train loss: 0.0721	Test Acc: 0.0977	Test loss: 0.0722
+Epoch 4  	Train Acc: 0.0792	Train loss: 0.0722	Test Acc: 0.0956	Test loss: 0.0722
+Epoch 5  	Train Acc: 0.1094	Train loss: 0.0721	Test Acc: 0.0876	Test loss: 0.0722
+Epoch 6  	Train Acc: 0.1021	Train loss: 0.0720	Test Acc: 0.0744	Test loss: 0.0722

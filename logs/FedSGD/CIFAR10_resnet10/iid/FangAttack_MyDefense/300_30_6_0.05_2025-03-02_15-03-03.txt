@@ -1,0 +1,9 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 64, learning_rate: 0.05, model: resnet10, dataset: CIFAR10, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, num_workers: 0, record_time: False, gpu_idx: [3], my_exp: True, epochs: 300, predict_epochs: 5, predict_alpha: 0.8, show_sign_flip: False, other_show_3d: False, npy_file_name: 4.3.2, npy_prefix: None, num_clients: 30, num_adv: 6, attack: FangAttack, defense: MyDefense, attack_params: {'stop_threshold': 1e-05}, defense_params: {'show_3d': True, 'metric': 'euclidean', 'gamma': 0.99, 'recored_rs': True}, benchmark: False, num_training_sample: 50000, num_channels: 3, num_classes: 10, mean: (0.4914, 0.4822, 0.4465), std: (0.247, 0.243, 0.261), device: cuda:3, output: ./logs/FedSGD/CIFAR10_resnet10/iid/FangAttack_MyDefense/300_30_6_0.05_2025-03-02_15-03-03.txt
+
+Started on Sun Mar  2 15:03:03 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...

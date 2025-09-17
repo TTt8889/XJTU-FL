@@ -1,0 +1,7 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 32, learning_rate: 0.01, model: lenet, dataset: MNIST, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, num_workers: 8, record_time: False, gpu_idx: [4], my_exp: True, epochs: 200, predict_epochs: 5, predict_alpha: 0.8, show_sign_flip: False, other_show_3d: False, only_show_last_epoch: True, npy_file_name: 4.3.2, npy_prefix: None, num_clients: 30, num_adv: 6, attack: ALIE, defense: NormClipping, attack_params: None, defense_params: {'weakDP': True, 'norm_threshold': 3, 'noise_mean': 0, 'noise_std': 0.002}, benchmark: False, num_training_sample: 60000, num_channels: 1, num_classes: 10, mean: (0.1307,), std: (0.3081,), device: cuda:4, output: ./logs/FedSGD/MNIST_lenet/iid/ALIE_NormClipping/200_30_6_0.01_2025-03-03_00-59-31.txt
+
+Started on Mon Mar  3 00:59:31 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned

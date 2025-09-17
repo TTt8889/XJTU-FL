@@ -1,0 +1,18 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 64, learning_rate: 0.01, model: lenet, dataset: MNIST, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, gpu_idx: [2], num_workers: 0, record_time: False, my_exp: True, show_3d: False, epochs: 200, predict_epochs: 5, predict_alpha: 0.8, num_clients: 30, num_adv: 6, attack: MyAttack, defense: NormClipping, attack_params: None, defense_params: {'weakDP': True, 'norm_threshold': 3, 'noise_mean': 0, 'noise_std': 0.002}, benchmark: False, num_training_sample: 60000, num_channels: 1, num_classes: 10, mean: (0.1307,), std: (0.3081,), device: cuda:2, output: ./logs/FedSGD/MNIST_lenet/iid/MyAttack_NormClipping/200_30_6_0.01_2025-02-21_21:18:29.txt
+
+Started on Fri Feb 21 21:18:29 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...
+Epoch 0  	Train Acc: 0.0995	Train loss: 0.0360	Test Acc: 0.0930	Test loss: 0.0362
+Epoch 1  	Train Acc: 0.1042	Train loss: 0.0360	Test Acc: 0.0923	Test loss: 0.0362
+Epoch 2  	Train Acc: 0.0932	Train loss: 0.0360	Test Acc: 0.0860	Test loss: 0.0362
+Epoch 3  	Train Acc: 0.0922	Train loss: 0.0360	Test Acc: 0.0908	Test loss: 0.0362
+Epoch 4  	Train Acc: 0.0901	Train loss: 0.0360	Test Acc: 0.0980	Test loss: 0.0362
+Epoch 5  	Train Acc: 0.0870	Train loss: 0.0360	Test Acc: 0.1079	Test loss: 0.0361
+Epoch 6  	Train Acc: 0.1031	Train loss: 0.0360	Test Acc: 0.1162	Test loss: 0.0361
+Epoch 7  	Train Acc: 0.1094	Train loss: 0.0359	Test Acc: 0.1197	Test loss: 0.0361
+Epoch 8  	Train Acc: 0.1297	Train loss: 0.0359	Test Acc: 0.1214	Test loss: 0.0361

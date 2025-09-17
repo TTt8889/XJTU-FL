@@ -1,0 +1,7 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 64, learning_rate: 0.05, model: resnet10, dataset: CIFAR10, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, num_workers: 0, record_time: False, gpu_idx: [1], my_exp: True, epochs: 300, predict_epochs: 5, predict_alpha: 0.8, show_sign_flip: False, other_show_3d: False, npy_file_name: 4.3.2, npy_prefix: None, num_clients: 30, num_adv: 6, attack: Gaussian, defense: MyDefense, attack_params: {'noise_mean': 0, 'noise_std': 1}, defense_params: {'show_3d': True, 'metric': 'euclidean', 'gamma': 0.99, 'recored_rs': True}, benchmark: False, num_training_sample: 50000, num_channels: 3, num_classes: 10, mean: (0.4914, 0.4822, 0.4465), std: (0.247, 0.243, 0.261), device: cuda:1, output: ./logs/FedSGD/CIFAR10_resnet10/iid/Gaussian_MyDefense/300_30_6_0.05_2025-03-01_20-08-29.txt
+
+Started on Sat Mar  1 20:08:29 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned

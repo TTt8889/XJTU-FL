@@ -1,0 +1,17 @@
+seed: 4, algorithm: FedSGD, optimizer: SGD, momentum: 0.9, weight_decay: 0.0005, batch_size: 32, learning_rate: 0.01, model: lenet, dataset: MNIST, distribution: iid, im_iid_gamma: 0.01, tail_cls_from: 4, dirichlet_alpha: 0.2, cache_partition: False, num_workers: 0, record_time: False, gpu_idx: [3], my_exp: True, epochs: 200, predict_epochs: 5, predict_alpha: 0.8, show_sign_flip: False, other_show_3d: False, only_show_last_epoch: False, hyper_e: 50, npy_file_name: 3.3.2hyperE, npy_prefix: None, num_clients: 30, num_adv: 9, attack: MyAttack, defense: CenteredClipping, attack_params: {'aff_open': False, 'moment_open': True, 'record_sign_match': False}, defense_params: {'norm_threshold': 100, 'num_iters': 1}, benchmark: False, num_training_sample: 60000, num_channels: 1, num_classes: 10, mean: (0.1307,), std: (0.3081,), device: cuda:3, output: ./logs/FedSGD/MNIST_lenet/iid/MyAttack_CenteredClipping/200_30_9_0.01_2025-03-12_16-35-28.txt
+
+Started on Wed Mar 12 16:35:28 2025
+Generating new indices
+Doing iid partition
+iid partition finished
+Data partitioned
+Clients and server are initialized
+Starting Training...
+Epoch 0  	Train Acc: 0.0990	Train loss: 0.0722	Test Acc: 0.1266	Test loss: 0.1679
+Epoch 1  	Train Acc: 0.1521	Train loss: 0.1649	Test Acc: 0.1273	Test loss: 1.8847
+Epoch 2  	Train Acc: 0.1187	Train loss: 1.9062	Test Acc: 0.0947	Test loss: 5.7214
+Epoch 3  	Train Acc: 0.0896	Train loss: 5.6932	Test Acc: 0.0975	Test loss: 19.3955
+Epoch 4  	Train Acc: 0.1042	Train loss: 19.2944	Test Acc: 0.1035	Test loss: 224.0943
+Epoch 5  	Train Acc: 0.0844	Train loss: 226.7265	Test Acc: 0.0698	Test loss: 9261.5345
+Epoch 6  	Train Acc: 0.0573	Train loss: 9096.9205	Test Acc: 0.0707	Test loss: 4289.4393
+Epoch 7  	Train Acc: 0.0813	Train loss: 4368.5712	Test Acc: 0.1251	Test loss: 5053.1662
